@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "605834759076",
+    "project_id": "agrostores-b2bb4",
+    "storage_bucket": "agrostores-b2bb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605834759076:android:85cc09c062b8df1530cf31",
+        "android_client_info": {
+          "package_name": "com.agrostores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605834759076-gh2ifclsg30r7904ue6rb1evqemta6la.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.application",
+            "certificate_hash": "226732d02e815a9823200a6b25e294856ca48638"
+          }
+        },
+        {
+          "client_id": "605834759076-7asoksm6rnehqv98m830drel7mlvamno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGDyIKHKSO00rjBB5yL2QCvn-vplIVuI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605834759076-7asoksm6rnehqv98m830drel7mlvamno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
