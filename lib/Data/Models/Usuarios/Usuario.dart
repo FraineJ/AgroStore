@@ -4,8 +4,12 @@ import 'package:flutter/material.dart';
 class User {
 
    String uid;
-   String nombre;
-   String apellidos;
+   String primerNombre;
+   String segundoNombre;
+   String primerApellido;
+   String segundoApellido;
+   String nombreCompleto;
+   String filtro;
    String correo;
    String clave;
    DateTime fechaNacimiento;
@@ -20,7 +24,7 @@ class User {
    // List<ListaPublicaciones> mysPublicaciones;
    // List<ListaPublicaciones> mysApicaciones;
 
-   User( { Key key, this.uid, this.nombre, this.apellidos, this.correo, this.fechaNacimiento, this.tipoDocumento, this.numeroDocumento, this.telefono, this.genero, this.clave,  this.descripcionProfecional, this.estadoCivil, this.urlFoto, this.TokenUser });  // this.mysPublicaciones, this.mysApicaciones  });
+   User( { Key key, this.uid, this.primerNombre, this.segundoNombre, this.primerApellido, this.segundoApellido, this.nombreCompleto, this.filtro, this.correo, this.fechaNacimiento, this.tipoDocumento, this.numeroDocumento, this.telefono, this.genero, this.clave,  this.descripcionProfecional, this.estadoCivil, this.urlFoto, this.TokenUser });  // this.mysPublicaciones, this.mysApicaciones  });
 
    // Del JSON original nos genera un producto de clase
        User.fromJson({@required Map<String, dynamic> originalJson}) {
@@ -28,8 +32,12 @@ class User {
          if (originalJson != null) {
 
            this.uid = originalJson["uid"] ?? null;
-           this.nombre = originalJson["nombre"];
-           this.apellidos = originalJson["apellidos"] ;
+           this.primerNombre = originalJson["primerNombre"];
+           this.segundoNombre = originalJson["segundoNombre"];
+           this.primerApellido = originalJson["primerApellido"];
+           this.segundoApellido = originalJson["segundoApellido"];
+           this.nombreCompleto = originalJson["nombreCompleto"];
+           this.filtro = originalJson["filtro"] ;
            this.correo = originalJson["correo"] ?? null;
            this.clave = originalJson["clave"] ?? null;
            this.fechaNacimiento = originalJson["fechaNacimiento"] ?? null;
@@ -46,8 +54,12 @@ class User {
 
   Map<String, dynamic> toJson() => {
       'iud': uid,
-      'nombre': nombre,
-      'apellidos': apellidos,
+      'primerNombre': primerNombre,
+      'segundoNombre': segundoNombre,
+      'primerApellido': primerApellido,
+      'segundoApellido': segundoApellido,
+      'nombreCompleto': nombreCompleto,
+      'filtro': filtro,
       'correo': correo,
       'fechaNacimiento': fechaNacimiento,
       'tipoDocumento': tipoDocumento,
@@ -61,6 +73,4 @@ class User {
       // 'mysPublicaciones': mysPublicaciones,
       // 'mysApicaciones': mysApicaciones
    };
-
-
 }
